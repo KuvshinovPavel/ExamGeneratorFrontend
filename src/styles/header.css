@@ -1,0 +1,27 @@
+.header {
+    background: url("../assets/backgrounds/mainpage-background.jpg");
+    height: 55px;
+;
+}
+.header-title{
+    text-align: center;
+    color: #851df8;
+    font-size: 35px;
+
+}
+.header-title-navlink{
+    text-decoration: none;
+}
+
+.elems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.header-icon{
+    filter:  brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2744%) hue-rotate(261deg) brightness(92%) contrast(112%);
+    margin:10px;
+    width: 35px;
+    height: 35px;
+}

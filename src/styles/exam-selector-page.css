@@ -1,0 +1,54 @@
+.title {
+    text-align: center;
+    font-size: 35px;
+    font-family: "Trebuchet MS", sans-serif;
+
+}
+
+.ex {
+
+
+    font-size: 30px;
+}
+
+.main-content {
+    text-align: center;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    /*background-color: #61dafb;*/
+    width: 34%;
+    height: 100%;
+    margin-left: 33%;
+    /*margin: 0 auto;*/
+}
+
+.math {
+
+    background: url("../assets/backgrounds/math.jpg");
+}
+
+.inf {
+    text-align: center;
+    background: url("../assets/backgrounds/infor.jpg");
+}
+
+.subject {
+    margin: 10px;
+    padding:15px 15px 15px 15px;
+    border-radius: 10px;
+    height: 80px;
+
+}
+
+.select-subject-navlink {
+
+
+    text-decoration: none;
+
+}
+
+.select-subject-navlink span {
+    background-color: #000000;
+    color: #ffffff;
+}

@@ -1,0 +1,14 @@
+.help {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.name {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 25px;
+}
