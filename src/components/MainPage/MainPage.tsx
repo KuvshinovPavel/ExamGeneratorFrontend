@@ -8,6 +8,10 @@ import {OGEMathGeneration} from "../ExamGeneration/GenerationPages/OGEMathGenera
 import {OGEInformaticsGeneration} from "../ExamGeneration/GenerationPages/OGEInformaticsGeneration";
 import {EGEMathGeneration} from "../ExamGeneration/GenerationPages/EGEMathGeneration";
 import {EGEInformaticsGeneration} from "../ExamGeneration/GenerationPages/EGEInformaticsGeneration";
+import {OGEMath} from "../ExamGeneration/ExamPages/OGEMath";
+import {OGEInformatics} from "../ExamGeneration/ExamPages/OGEInformatics";
+import {EGEMath} from "../ExamGeneration/ExamPages/EGEMath";
+import {EGEInformatics} from "../ExamGeneration/ExamPages/EGEInformatics";
 
 export const MainPage: FC = () => {
     return (
@@ -18,10 +22,14 @@ export const MainPage: FC = () => {
                 <Route path={'/'} element={<ExamSelector/>}/>
                 <Route path={'/help'} element={<Help/>}/>
                 <Route path={'/profile'} element={<Profile/>}/>
+                <Route path={'/oge-math'} element={<OGEMath/>}/>
+                <Route path={'/oge-inf'} element={<OGEInformatics/>}/>
+                <Route path={'/ege-math'} element={<EGEMath/>}/>
+                <Route path={'/ege-inf'} element={<EGEInformatics/>}/>
                 <Route path={'/oge-math-gen'} element={<OGEMathGeneration/>}/>
-                <Route path="/oge-inf-gen" element={<OGEInformaticsGeneration/>}/>
-                <Route path="/ege-math-gen" element={<EGEMathGeneration/>}/>
-                <Route path="/ege-inf-gen" element={<EGEInformaticsGeneration/>}/>
+                <Route path={'/oge-inf-gen'} element={<OGEInformaticsGeneration/>}/>
+                <Route path={'/ege-math-gen'} element={<EGEMathGeneration/>}/>
+                <Route path={'/ege-inf-gen'} element={<EGEInformaticsGeneration/>}/>
             </Routes>
 
             {/*<Routes>*/}
