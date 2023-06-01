@@ -5,3 +5,15 @@
     margin-left: auto;
     margin-right: auto;
 }
+.test-body div, .test-body span, .test-body input {
+    margin: 5px;
+}
+.test-span{
+    font-size: 45px;
+}
+.test-input {
+    width: 15%;
+}
+.right {
+    color:green;
+}
