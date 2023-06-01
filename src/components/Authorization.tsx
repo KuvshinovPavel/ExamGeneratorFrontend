@@ -25,24 +25,25 @@ export const Authorization: FC = () => {
         }
     }
     return (
-        <div className='main'>
-            <div>
-                <input
-                    value={email}
-                    onChange={(e) => onChangeEmail(e.target.value)}
-                    type="email"
-                    placeholder='Логин'/>
-            </div>
-            <div>
-                <input value={password}
-                       onChange={(e) => onChangePassword(e.target.value)}
-                       type="password"
-                       placeholder='Пароль'/>
-            </div>
-            <button className='login-btn' onClick={() => submitLogin()}>Войти</button>
-            <div><NavLink to={"/register"}>Зарегистрироваться</NavLink></div>
-            <div><NavLink to={"/home"}>Продолжить как гость</NavLink></div>
+        <div className='auth-main'>
+            <div className='auth-main-form'>
+                <div>
+                    <input
+                        value={email}
+                        onChange={(e) => onChangeEmail(e.target.value)}
+                        type="email"
+                        placeholder='Логин'/>
+                </div>
+                <div>
+                    <input value={password}
+                           onChange={(e) => onChangePassword(e.target.value)}
+                           type="password"
+                           placeholder='Пароль'/>
+                </div>
+                <button className='login-btn' onClick={() => submitLogin()}>Войти</button>
+                <div><NavLink to={"/register"}>Зарегистрироваться</NavLink></div>
+                <div><NavLink to={"/home"}>Продолжить как гость</NavLink></div>
 
-        </div>
+            </div></div>
     )
 }

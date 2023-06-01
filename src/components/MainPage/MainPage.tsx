@@ -12,11 +12,16 @@ import {OGEMath} from "../ExamGeneration/ExamPages/OGEMath";
 import {OGEInformatics} from "../ExamGeneration/ExamPages/OGEInformatics";
 import {EGEMath} from "../ExamGeneration/ExamPages/EGEMath";
 import {EGEInformatics} from "../ExamGeneration/ExamPages/EGEInformatics";
-
+import '../../styles/main-page.css'
+import {useSelector} from "react-redux";
+import {RootState} from "../../redux/store";
+import {User} from "../../redux/types/payloadDTO/user";
 export const MainPage: FC = () => {
+    const isAuth: boolean = useSelector((data:RootState)=>data.auth.isAuth);
+    const user: User  = useSelector((data:RootState)=>data.auth.user);
     return (
         <div className="main-page">
-            <Header/>
+            <Header isAuth={isAuth} user={user}/>
             <hr/>
             <Routes>
                 <Route path={'/'} element={<ExamSelector/>}/>
@@ -32,9 +37,7 @@ export const MainPage: FC = () => {
                 <Route path={'/ege-inf-gen'} element={<EGEInformaticsGeneration/>}/>
             </Routes>
 
-            {/*<Routes>*/}
 
-            {/*</Routes>*/}
         </div>
     )
 }

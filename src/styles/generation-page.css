@@ -1,4 +1,24 @@
-.action-btn{
+.gen-main {
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.action-btn {
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+
+}
+
+.gen {
     background-color: #54B435;
-    width: 20px;
+}
+
+.pdf {
+    background-color: #ff7300;
 }

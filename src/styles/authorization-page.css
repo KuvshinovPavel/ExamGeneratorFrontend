@@ -1,11 +1,18 @@
-.main {
-    position: absolute;
-    left: 40%;
-    top: 40%;
+.auth-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.auth-main-form {
+    width: 15%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 input {
-    width: 75%;
+    width: 100%;
     margin: 5px;
     text-align: center;
     border-radius: 10px;
@@ -15,13 +22,22 @@ input {
 .login-btn {
     background-color: #54B435;
     border-radius: 10px;
-    border: none;
     color: white;
-    width: 75%;
+    width: 100%;
     border: 1px solid;
+    margin: 5px;
 }
 
 .login-btn:hover {
     background-color: #fff;
     color: #54B435;
+}
+
+@media screen and (max-width: 720px) {
+    .auth-main-form {
+        background-color: #602e2e;
+        width: 55%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
