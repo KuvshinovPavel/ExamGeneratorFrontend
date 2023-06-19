@@ -2,7 +2,7 @@ import {FC, useState} from "react";
 import {useDispatch} from "react-redux";
 import {useNavigate} from "react-router-dom";
 import {register} from "../redux/actions/authAction";
-
+import '../styles/authorization-page.css';
 export const Registration: FC = () => {
     const dispatch = useDispatch<any>();
     const [userName, setUserName] = useState<string>('');
@@ -39,9 +39,9 @@ export const Registration: FC = () => {
         }
     }
     return (
-        <div className='main'>
+        <div className='auth-main'>
 
-            <div>
+            <div className='auth-main-form'>
                 <input
                     value={userName}
                     onChange={(e) => onChangeUserName(e.target.value)}
@@ -50,20 +50,20 @@ export const Registration: FC = () => {
                 />
             </div>
 
-            <div>
+            <div className='auth-main-form'>
                 <input
                     value={email}
                     onChange={(e) => onChangeEmail(e.target.value)}
                     type="email" placeholder='Email'/>
             </div>
 
-            <div>
+            <div className='auth-main-form'>
                 <input
                     value={password}
                     onChange={(e) => onChangePassword(e.target.value)}
                     type="password" placeholder='Пароль'/>
             </div>
-            <div>
+            <div className='auth-main-form'>
                 <input
                     value={confirmedPassword}
                     onChange={(e) => {
@@ -72,11 +72,12 @@ export const Registration: FC = () => {
                     type="password"
                     placeholder='Подтверждение пароля'/>
             </div>
-            <button onClick={() => {
+            <div className='auth-main-form'>
+            <button  onClick={() => {
                 submitRegistration()
-            }} className='login-btn'>Зарегистрироваться
+            }} className='login-btn '>Зарегистрироваться
             </button>
-
+            </div>
 
         </div>)
 }

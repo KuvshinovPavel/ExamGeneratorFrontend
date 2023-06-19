@@ -1,0 +1,12 @@
+.completed_tasks {
+    font-weight: bolder;
+    font-size: 45px;
+}
+.completed_tasks_info {
+    color: #2cff2c;
+    font-weight: bolder;
+    font-size: 60px;
+}
+.user_info {
+    font-size: 60px;
+}

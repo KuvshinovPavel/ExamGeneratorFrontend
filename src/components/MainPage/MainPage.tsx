@@ -29,7 +29,7 @@ export const MainPage: FC = () => {
             <Routes>
                 <Route path={'/'} element={<ExamSelector/>}/>
                 <Route path={'/help'} element={<Help/>}/>
-                <Route path={'/profile'} element={<Profile/>}/>
+                <Route path={'/profile'} element={<Profile user={user}/>}/>
                 <Route path={'/oge-math'} element={<OGEMath/>}/>
                 <Route path={'/oge-inf'} element={<OGEInformatics/>}/>
                 <Route path={'/ege-math'} element={<EGEMath/>}/>
