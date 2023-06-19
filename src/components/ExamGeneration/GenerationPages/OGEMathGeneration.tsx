@@ -2,13 +2,13 @@ import {FC} from "react";
 import {useNavigate} from "react-router-dom";
 import '../../../styles/generation-page.css'
 import {useDispatch} from "react-redux";
-import {generateTest} from "../../../redux/actions/testsAction";
+import {generateTestOGEMath} from "../../../redux/actions/testsAction";
 
 export const OGEMathGeneration: FC = () => {
    const navigate = useNavigate();
    const dispatch = useDispatch<any>();
    const onClassicWEBGenerationButton=()=>{
-        dispatch(generateTest());
+        dispatch(generateTestOGEMath());
        return navigate('/home/oge-math');
    }
 

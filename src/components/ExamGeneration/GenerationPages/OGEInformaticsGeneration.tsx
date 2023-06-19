@@ -1,10 +1,19 @@
 import {FC} from "react";
+import {useNavigate} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {generateTestOGEInf} from "../../../redux/actions/testsAction";
 
 export const OGEInformaticsGeneration: FC = () => {
+    const navigate = useNavigate();
+    const dispatch = useDispatch<any>();
+    const onClassicWEBGenerationButton=()=>{
+        dispatch(generateTestOGEInf());
+        return navigate('/home/oge-inf');
+    }
     return (
-        <div>
-            <div className="action-btn"  onClick={()=>alert('sgen')}><span>Сгенерировать обычный вариант</span></div>
-            <div className="action-btn" onClick={()=>alert('pdf')}><span>Сохранить в PDF</span></div>
+        <div className='gen-main'>
+            <div className="action-btn gen"  onClick={()=>onClassicWEBGenerationButton()}><span>СГЕНЕРИРОВАТЬ ОБЫЧНЫЙ ВАРИАНТ</span></div>
+
         </div>
     )
 }

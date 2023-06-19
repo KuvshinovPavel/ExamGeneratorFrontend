@@ -5,15 +5,26 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.codes {
+    display: grid;
+    grid-template-columns: 250px 250px ;
+}
+.code-listing{
+border:  solid 2px black;
+}
 .test-body div, .test-body span, .test-body input {
     margin: 5px;
 }
-.test-span{
+
+.test-span {
     font-size: 45px;
 }
+
 .test-input {
     width: 15%;
 }
+
 .right {
-    color:green;
+    color: green;
 }
